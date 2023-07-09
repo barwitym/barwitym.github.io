@@ -9,7 +9,7 @@ let bitSpeed = document.getElementById("bits"),
 let totalBitSpeed = 0;
 let totalKbSpeed = 0;
 let totalMbSpeed = 0;
-let numTests = 5;
+let numTests = 25;
 let testCompleted = 0;
 
 // Get random image from unsplash.com
@@ -42,7 +42,7 @@ function calculateSpeed(){
     
     testCompleted++;
 
-    // If all tests completed (we get 5 image then calculate avarage)
+    // If all tests completed (we get 25 image then calculate avarage)
     if (testCompleted === numTests){
         let avarageSpeedInBps =- parseInt((totalBitSpeed / numTests));
         let avarageSpeedInKbps =- parseInt(totalKbSpeed / numTests);
